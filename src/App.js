@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Events from './Events';
 
 class App extends Component {
 
@@ -10,9 +9,8 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to UVolunteer</h2>
+          <h2>Self-Report Covid-19 CoronaVirus</h2>
         </div>
-        <Events> 
       </div>
     );
   }
