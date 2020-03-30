@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button} from 'react-bootstrap';
-import './Events.js'
+
+
+import   Map  from './Map.js';
+import   Form  from './Form.js';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,10 +25,10 @@ class App extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/Map">Map</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/Form">Form</Link>
             </li>
           </ul>
         </nav>
@@ -32,11 +36,11 @@ class App extends Component {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/Map">
+            <Map />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/Form">
+            <Form />
           </Route>
           <Route path="/">
             <Home />
@@ -56,25 +60,8 @@ function Home() {
           <h2>Self-Report Covid-19 CoronaVirus</h2>
         </div>
           <div class="embed-container">
-        <Button href='/src/Events'>Link</Button> <Button type="submit">Button</Button>{' '}
-       <Button as="input" type="button" value="Input" />{' '}
-       <Button as="input" type="submit" value="Submit" />{' '}
-       <Button as="input" type="reset" value="Reset" />
     </div>
     </div>
     );
 }
-
-function About() {
-  return(
-    <div class="embed-container"> <iframe width="400" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Coronavirus - India" src="//akiboy96.maps.arcgis.com/apps/Embed/index.html?webmap=733b02909c9a486fb06cc772c14b32e1&extent=-180,-72.7433,180,81.4506&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legend=true&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div> 
-
-    );
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
-
-
 export default App;
