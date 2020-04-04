@@ -24,7 +24,7 @@ export default function Form() {
     <label>Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
 
-  <label>Email</label>
+    <label>Email</label>
     <input type="email" id="email" name="email" placeholder="Your email" />
 
     <p>Enter country</p>
@@ -34,6 +34,7 @@ export default function Form() {
  
     <label>Address</label>
     <input type="address" id="address" name="address" placeholder="Your address" />
+
 
     <label>Symptoms</label>
     <textarea id="symptoms" name="symptoms" placeholder="Comments.."></textarea>
