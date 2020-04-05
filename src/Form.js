@@ -27,9 +27,14 @@ export default function Form() {
     <label>Email</label>
     <input type="email" id="email" name="email" placeholder="Your email" />
 
-    <p>Enter country</p>
     <label>Country</label>
-    <DropdownTreeSelect data={data} onChange={onChange} />
+    <input type="text" id="country" name="country" placeholder="Your country" />
+
+    <label>State</label>
+    <input type="text" id="state" name="state" placeholder="Your state" />
+
+    <label>City</label>
+    <input type="text" id="city" name="city" placeholder="Your city" />
     
  
     <label>Address</label>
